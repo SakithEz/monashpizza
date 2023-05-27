@@ -1,0 +1,403 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Monash Pizza</title>
+
+    <!-- CSS FILES -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="css/bootstrap-icons.css" rel="stylesheet">
+
+    <link href="css/tooplate-crispy-kitchen.css" rel="stylesheet">
+
+    <link href = "css/index.css" rel = "stylesheet">
+
+    <!--
+
+Tooplate 2129 Crispy Kitchen
+
+https://www.tooplate.com/view/2129-crispy-kitchen
+
+-->
+</head>
+
+<body>
+<!-- navigation bar contents -->
+    <nav class="navbar navbar-expand-lg bg-black shadow-lg" id="navv">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <a class="navbar-brand" href="index.html" id="titlecolor" style="color: rgb(181, 16, 16);">
+                <img src="images/Logo.png" id="picc">
+                <span class="animtxt">Monash Pizza</span>
+            </a>
+            
+
+            <div class="d-lg-none">
+                <button type="button" class="custom-btn btn btn-danger" data-bs-toggle="modal"
+                    data-bs-target="#BookingModal">Reservation</button>
+            </div>
+<!-- navigation bar buttons -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active bordered-link" href="index.html">Home</a>
+                    </li>
+            
+                    <li class="nav-item">
+                        <a class="nav-link bordered-link" href="index.html">Menu</a>
+                    </li>
+            
+                    <li class="nav-item">
+                        <a class="nav-link bordered-link" href="index.html">Reviews</a>
+                    </li>
+            
+                    <li class="nav-item">
+                        <a class="nav-link bordered-link" href="index.html">About</a>
+                    </li>
+            
+                    <li class="nav-item">
+                        <a class="nav-link bordered-link" href="index.html">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+            
+            
+<!-- Order Now Button -->
+            <div class="d-none d-lg-block">
+                <button type="button" class="custom-btn btn btn-danger an-button" data-bs-toggle="modal"
+                    data-bs-target="#BookingModal" onclick="popup()">Order Now</button>
+            </div>
+
+        </div>
+    </nav>
+
+    <main>
+<!-- body -->
+        <section class="hero">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-5 col-12 m-auto">
+                        <div class="heroText">
+
+                            <h1 class="text-white mb-lg-5 mb-3">Pepperoni Pizza </h1>
+
+                            <div class="c-reviews my-3 d-flex flex-wrap align-items-center">
+                                <div class="d-flex flex-wrap align-items-center">
+                                    <h4 class="text-white mb-0 me-3">4.4/5</h4>
+
+                                    <div class="reviews-stars">
+                                        <i class="bi-star-fill reviews-icon"></i>
+                                        <i class="bi-star-fill reviews-icon"></i>
+                                        <i class="bi-star-fill reviews-icon"></i>
+                                        <i class="bi-star-fill reviews-icon"></i>
+                                        <i class="bi-star reviews-icon"></i>
+                                    </div>
+                                </div>
+
+                                <p class="text-white w-100"> <strong>$15.00</strong> </p>
+                            </div>
+                        </div>
+                    </div>
+<!-- Images with two buttons  -->
+<!-- 1 -->
+                    <div class="col-lg-7 col-12">
+                        <div id="carouselExampleCaptions" class="carousel carousel-fade hero-carousel slide"
+                            data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <div class="carousel-image-wrap">
+                                        <img src="images/1000_F_335943019_BQbCWckVRHwHynZvlOb7wsogYtHivGdw.jpg"
+                                            class="img-fluid carousel-image" alt="" id="Pizza3">
+                                    </div>
+
+                                    <div class="carousel-caption">
+                                        <span class="text-white">
+                                            <i class="bi-geo-alt me-2"></i>
+                                            Notting Hill, Blackburn rd
+                                        </span>
+
+                                        <h4 class="hero-text">Fine Dining Restaurant</h4>
+                                        <p class="text-white w-100"> <strong> Plain Cheese Pizza for $10.00</strong> </p>
+                                    </div>
+                                    
+                                </div>
+<!-- 2 -->
+                                <div class="carousel-item">
+                                    <div class="carousel-image-wrap">
+                                        <img src="images/homemade-pizza-with-salami-feta-cheese-onion-top-view-free-space-your-text_187166-34921.jpg"
+                                            class="img-fluid carousel-image" alt="" Id="Pizza2">
+                                    </div>
+
+                                    <div class="carousel-caption">
+                                        <div class="d-flex align-items-center">
+                                            <h4 class="hero-text">BBQ Pizza</h4>
+
+                                            <span class="price-tag ms-4"><small>$</small>26.50</span>
+                                        </div>
+
+                                        <div class="d-flex flex-wrap align-items-center">
+                                            <h5 class="reviews-text mb-0 me-3">3.8/5</h5>
+
+                                            <div class="reviews-stars">
+                                                <i class="bi-star-fill reviews-icon"></i>
+                                                <i class="bi-star-fill reviews-icon"></i>
+                                                <i class="bi-star-fill reviews-icon"></i>
+                                                <i class="bi-star reviews-icon"></i>
+                                                <i class="bi-star reviews-icon"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+<!-- 3 -->
+                                <div class="carousel-item">
+                                    <div class="carousel-image-wrap">
+                                        <img src="images/depositphotos_43763257-stock-photo-homemade-barbecue-chicken-pizza.jpg"
+                                            class="img-fluid carousel-image" alt="" id =>
+                                    </div>
+
+                                    <div class="carousel-caption">
+                                        <div class="d-flex align-items-center">
+                                            <h4 class="hero-text">Cheese & Onion Pizza</h4>
+
+                                            <span class="price-tag ms-4"><small>$</small>18.25</span>
+                                        </div>
+
+                                        <div class="d-flex flex-wrap align-items-center">
+                                            <h5 class="reviews-text mb-0 me-3">4.2/5</h5>
+
+                                            <div class="reviews-stars">
+                                                <i class="bi-star-fill reviews-icon"></i>
+                                                <i class="bi-star-fill reviews-icon"></i>
+                                                <i class="bi-star-fill reviews-icon"></i>
+                                                <i class="bi-star-fill reviews-icon"></i>
+                                                <i class="bi-star reviews-icon"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+<!-- 2 buttons -->
+                            <button class="carousel-control-prev" type="button"
+                                data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+
+                            <button class="carousel-control-next" type="button"
+                                data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+<!-- background video  -->
+            <div class="video-wrap">
+                <video autoplay="" loop="" muted="" class="custom-video" poster="">
+                    <source src="pizzavideo123.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+
+            <div class="overlay"></div>
+        </section>
+
+        <section class="menu section-padding">
+            <div class="container">
+                <div class="row">
+<!-- Special Menu -->
+                    <div class="col-12">
+                        <h2 class="text-center mb-lg-5 mb-4 special-menu">Today's Special Menu</h2>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <div class="mt">
+                            <div class="menu-image-wrap">
+                                <img src="images/menu/pizza-with-lot-toppings-it_481572-1370.png" class="img-fluid menu-image" alt="">
+                            </div>
+    <!-- 1 -->
+                            <div class="menu-info d-flex flex-wrap align-items-center">
+                                <h4 class="mb-0">The Lot Pizza</h4>
+                                
+                                <span class="price-tag bg-white shadow-lg ms-4"><small>$</small>12.50</span>
+                                
+                                <div class="d-flex flex-wrap align-items-center w-100 mt-2">
+                                    <h6 class="reviews-text mb-0 me-3">4.3/5</h6>
+                                    
+                                    <div class="reviews-stars">
+                                        <i class="bi-star-fill reviews-icon"></i>
+                                        <i class="bi-star-fill reviews-icon"></i>
+                                        <i class="bi-star-fill reviews-icon"></i>
+                                        <i class="bi-star-fill reviews-icon"></i>
+                                        <i class="bi-star reviews-icon"></i>
+                                    </div>
+                                    
+                                    <p class="reviews-text mb-0 ms-4">102 Reviews</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+<!-- 2 -->
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <div class="mt">
+                            <div class="menu-image-wrap">
+                                <img src="images/menu/360_F_387834317_EMwZLsmk33cqG4AWFf25RMlFkzsJjLao.jpg"
+                                    class="img-fluid menu-image" alt="">
+
+                                
+                            </div>
+
+                            <div class="menu-info d-flex flex-wrap align-items-center">
+                                <h4 class="mb-0">Napolitana Pizza</h4>
+
+                                <span class="price-tag bg-white shadow-lg ms-4"><small>$</small>24.50</span>
+
+                                <div class="d-flex flex-wrap align-items-center w-100 mt-2">
+                                    <h6 class="reviews-text mb-0 me-3">3/5</h6>
+
+                                    <div class="reviews-stars">
+                                        <i class="bi-star-fill reviews-icon"></i>
+                                        <i class="bi-star-fill reviews-icon"></i>
+                                        <i class="bi-star-fill reviews-icon"></i>
+                                        <i class="bi-star reviews-icon"></i>
+                                        <i class="bi-star reviews-icon"></i>
+                                    </div>
+
+                                    <p class="reviews-text mb-0 ms-4">50 Reviews</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+<!-- 3 -->
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <div class="mt">
+                            <div class="menu-image-wrap">
+                                <img src="images/menu/360_F_574603352_0Idtla0GAJ5cjLM1F3rBaBch6YqGgahK.jpg" class="img-fluid menu-image"
+                                    alt="">
+
+                                
+                            </div>
+
+                            <div class="menu-info d-flex flex-wrap align-items-center">
+                                <h4 class="mb-0">Capricciosa Pizza</h4>
+
+                                <span class="price-tag bg-white shadow-lg ms-4"><small>$</small>18</span>
+
+                                <del class="ms-4"><small>$</small>21</del>
+
+                                <div class="d-flex flex-wrap align-items-center w-100 mt-2">
+                                    <h6 class="reviews-text mb-0 me-3">3/5</h6>
+
+                                    <div class="reviews-stars">
+                                        <i class="bi-star-fill reviews-icon"></i>
+                                        <i class="bi-star-fill reviews-icon"></i>
+                                        <i class="bi-star-fill reviews-icon"></i>
+                                        <i class="bi-star reviews-icon"></i>
+                                        <i class="bi-star reviews-icon"></i>
+                                    </div>
+
+                                    <p class="reviews-text mb-0 ms-4">86 Reviews</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+
+                    
+
+                    
+
+                </div>
+            </div>
+        </section>
+
+        
+
+<!-- footer -->
+
+    </main>
+
+    <footer class="site-footer section-padding">
+
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-12">
+                    <h3 class="text-white mb-4 me-5">Monash Pizza</h3>
+                </div>
+
+                <div class="col-lg-4 col-md-7 col-xs-12 tooplate-mt30">
+                    <h6 class="text-white mb-lg-4 mb-3">Location</h6>
+
+                    <p>404 Ferntree Gully Road, Notting Hill, 3168</p>
+<!-- directions button -->
+                    <button id="bt1" onclick="click1()"> Direction </button>
+
+                </div>
+
+                <div class="col-lg-4 col-md-5 col-xs-12 tooplate-mt30" >
+                    <h6 class="text-white mb-lg-4 mb-3">Opening Hours</h6>
+
+                    <p class="mb-2">Monday - Closed <br><br>
+                        Tuesday - 4:30 PM - 9:30 PM <br><br>
+                        Wednesday - 4:30 PM - 9:30 PM <br><br>
+                        Thursday - 11:30 AM - 9:30 PM <br>  <br>  
+                        Friday - 4:30 PM - 9:15 PM <br><br>
+                        Saturday - 4:30 PM - 9:30 PM <br><br>
+                        Sunday - 4:30 PM - 9:30 PM</p>
+
+                    
+
+                    
+
+                
+
+                
+
+            </div><!-- row ending -->
+            <div class="col-lg-4 col-md-7 col-xs-12 tooplate-mt30">
+                <h6 class="text-white mb-lg-4 mb-3">Contact Us</h6>
+              
+                
+                <p>Tel - 0422-245-789</p>
+                <p>Email - monashpizza@gmail.com</p>
+              </div>
+
+        </div><!-- container ending -->
+
+    </footer>
+
+    <!-- Modal -->
+    
+
+    <!-- JAVASCRIPT FILES -->
+    <script src="js/java.js"></script>
+    <!-- <script src="js/custom.js"></script>
+    <script src="js/jquery.min.js"></script> -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
